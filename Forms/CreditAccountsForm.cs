@@ -1,5 +1,6 @@
 ﻿using _2_1058_MAGUREANU_STEFAN.Entitites;
 using _2_1058_MAGUREANU_STEFAN.Extensions;
+using _2_1058_MAGUREANU_STEFAN.Forms;
 using _2_1058_MAGUREANU_STEFAN.Repositories;
 using System;
 using System.Collections.Generic;
@@ -38,7 +39,7 @@ namespace _2_1058_MAGUREANU_STEFAN
 
             if (columnName.Equals("EditColumn"))
             {
-                EditForm editForm = new EditForm(creditAccount);
+                EditCreditAccountForm editForm = new EditCreditAccountForm(creditAccount);
                 editForm.ShowDialog();
                 creditAccountsDataGridView.DataSource = _creditAccountRepository.FetchDataCreditAccounts(_client);
 
@@ -47,7 +48,7 @@ namespace _2_1058_MAGUREANU_STEFAN
                 DialogResult dialogResult = MessageBox.Show("Are you sure you want to perform this action ?", "Confirm Action", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if(dialogResult == DialogResult.Yes)
                 {
-                    _creditAccountRepository.deleteDataCreditAccount(creditAccount);
+                    _creditAccountRepository.DeleteDataCreditAccount(creditAccount);
                     creditAccountsDataGridView.DataSource = _creditAccountRepository.FetchDataCreditAccounts(_client);
                 }
             }
@@ -55,6 +56,13 @@ namespace _2_1058_MAGUREANU_STEFAN
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
+            creditAccountsDataGridView.DataSource = _creditAccountRepository.FetchDataCreditAccounts(_client);
+        }
+
+        private void addCreditAccountButton_Click(object sender, EventArgs e)
+        {
+            AddCreditAccountForm addCreditAccountForm = new AddCreditAccountForm();
+            addCreditAccountForm.ShowDialog();
             creditAccountsDataGridView.DataSource = _creditAccountRepository.FetchDataCreditAccounts(_client);
         }
     }

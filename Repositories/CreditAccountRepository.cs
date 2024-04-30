@@ -48,7 +48,7 @@ namespace _2_1058_MAGUREANU_STEFAN.Repositories
 
             return data;
         }
-        public void updateDataCreditAccount(CreditAccount creditAccount)
+        public void UpdateDataCreditAccount(CreditAccount creditAccount)
         {
 
             creditAccount.OpenDate.Replace('/', '-');
@@ -58,7 +58,8 @@ namespace _2_1058_MAGUREANU_STEFAN.Repositories
             {
                 connection.Open();
 
-                string sql = $"UPDATE credit_accounts " +
+                string sql =
+                    $"UPDATE credit_accounts " +
                     $"SET sold = {creditAccount.Sold}, loan_amount = {creditAccount.LoanAmount}," +
                     $"open_date = TO_DATE('{creditAccount.OpenDate}','DD-MM-YYYY'), close_date = TO_DATE('{creditAccount.CloseDate}','DD-MM-YYYY'), " +
                     $"interest_rate_per_month = {creditAccount.InterestRatePerMonth} " +
@@ -81,7 +82,7 @@ namespace _2_1058_MAGUREANU_STEFAN.Repositories
 
         }
 
-        public void deleteDataCreditAccount(CreditAccount creditAccount)
+        public void DeleteDataCreditAccount(CreditAccount creditAccount)
         {
             using (OracleConnection connection = new OracleConnection(DataBaseConstants.ConnectionString))
             {
@@ -106,5 +107,35 @@ namespace _2_1058_MAGUREANU_STEFAN.Repositories
 
         }
 
+
+        public void AddDataCreditAccount(CreditAccount creditAccount)
+        {
+            creditAccount.OpenDate.Replace('/', '-');
+            creditAccount.CloseDate.Replace("/", "-");
+
+            using (OracleConnection connection = new OracleConnection(DataBaseConstants.ConnectionString))
+            {
+                connection.Open();
+
+                string sql =
+                    $"INSERT INTO credit_accounts(id_account,id_client,sold,loan_amount,open_date,close_date,interest_rate_per_month) " +
+                    $"VALUES ({creditAccount.IdAccount},{creditAccount.IdClient},{creditAccount.Sold},{creditAccount.LoanAmount},TO_DATE('{creditAccount.OpenDate}','DD-MM-YYYY'),TO_DATE('{creditAccount.CloseDate}','DD-MM-YYYY'),{creditAccount.InterestRatePerMonth})";
+
+                using (OracleCommand command = new OracleCommand(sql, connection))
+                {
+                    int rowsAffected = command.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Added succesfull", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Add operation not succesfull", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                }
+                connection.Close();
+            }
+        }
     }
 }

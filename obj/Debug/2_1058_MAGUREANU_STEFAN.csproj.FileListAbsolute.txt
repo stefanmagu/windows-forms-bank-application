@@ -32,4 +32,5 @@ C:\Users\stefa\Desktop\Visual Studio\An 2 Semestrul 2\PAW\Seminar\2_1058_MAGUREA
 C:\Users\stefa\Desktop\Visual Studio\An 2 Semestrul 2\PAW\Seminar\2_1058_MAGUREANU_STEFAN\obj\Debug\_2_1058_MAGUREANU_STEFAN.MainForm.resources
 C:\Users\stefa\Desktop\Visual Studio\An 2 Semestrul 2\PAW\Seminar\2_1058_MAGUREANU_STEFAN\obj\Debug\2_1058_MAGUREANU_STEFAN.csproj.CopyComplete
 C:\Users\stefa\Desktop\Visual Studio\An 2 Semestrul 2\PAW\Seminar\2_1058_MAGUREANU_STEFAN\obj\Debug\_2_1058_MAGUREANU_STEFAN.CreditAccountsForm.resources
-C:\Users\stefa\Desktop\Visual Studio\An 2 Semestrul 2\PAW\Seminar\2_1058_MAGUREANU_STEFAN\obj\Debug\_2_1058_MAGUREANU_STEFAN.EditForm.resources
+C:\Users\stefa\Desktop\Visual Studio\An 2 Semestrul 2\PAW\Seminar\2_1058_MAGUREANU_STEFAN\obj\Debug\_2_1058_MAGUREANU_STEFAN.Forms.AddCreditAccountForm.resources
+C:\Users\stefa\Desktop\Visual Studio\An 2 Semestrul 2\PAW\Seminar\2_1058_MAGUREANU_STEFAN\obj\Debug\_2_1058_MAGUREANU_STEFAN.EditCreditAccountForm.resources

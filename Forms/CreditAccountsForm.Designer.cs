@@ -31,6 +31,7 @@
             this.creditAccountsDataGridView = new System.Windows.Forms.DataGridView();
             this.infoCreditAcountLabel = new System.Windows.Forms.Label();
             this.refreshButton = new System.Windows.Forms.Button();
+            this.addCreditAccountButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.creditAccountsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,11 +69,22 @@
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
+            // addCreditAccountButton
+            // 
+            this.addCreditAccountButton.Location = new System.Drawing.Point(1227, 7);
+            this.addCreditAccountButton.Name = "addCreditAccountButton";
+            this.addCreditAccountButton.Size = new System.Drawing.Size(149, 47);
+            this.addCreditAccountButton.TabIndex = 3;
+            this.addCreditAccountButton.Text = "Add credit account";
+            this.addCreditAccountButton.UseVisualStyleBackColor = true;
+            this.addCreditAccountButton.Click += new System.EventHandler(this.addCreditAccountButton_Click);
+            // 
             // CreditAccountsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1529, 398);
+            this.Controls.Add(this.addCreditAccountButton);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.infoCreditAcountLabel);
             this.Controls.Add(this.creditAccountsDataGridView);
@@ -89,5 +101,6 @@
         private System.Windows.Forms.DataGridView creditAccountsDataGridView;
         private System.Windows.Forms.Label infoCreditAcountLabel;
         private System.Windows.Forms.Button refreshButton;
+        private System.Windows.Forms.Button addCreditAccountButton;
     }
 }

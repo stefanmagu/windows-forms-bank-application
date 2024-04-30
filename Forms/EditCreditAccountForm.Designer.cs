@@ -1,6 +1,6 @@
 ﻿namespace _2_1058_MAGUREANU_STEFAN
 {
-    partial class EditForm
+    partial class EditCreditAccountForm
     {
         /// <summary>
         /// Required designer variable.
@@ -191,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(589, 358);
             this.Controls.Add(this.submitEditButton);
             this.Controls.Add(this.closeDateFormatLabel);
             this.Controls.Add(this.openDateFormatLabel);

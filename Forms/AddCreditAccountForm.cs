@@ -4,58 +4,41 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _2_1058_MAGUREANU_STEFAN
+namespace _2_1058_MAGUREANU_STEFAN.Forms
 {
-    public partial class EditForm : Form
+    public partial class AddCreditAccountForm : Form
     {
         private CreditAccountRepository _creditAccountRepository;
-
-        public EditForm(CreditAccount creditAccount)
+        public AddCreditAccountForm()
         {
             InitializeComponent();
-            InitializeEditFormFields(creditAccount);
             _creditAccountRepository = new CreditAccountRepository();
         }
 
-        public void InitializeEditFormFields(CreditAccount creditAccount) {
-            idAccountEditTextBox.Text = Convert.ToString(creditAccount.IdAccount);
-            idClientEditTextBox.Text = Convert.ToString(creditAccount.IdClient);
-            soldEditTextBox.Text = Convert.ToString(creditAccount.Sold);
-            loanAmountEditTextBox.Text = Convert.ToString(creditAccount.LoanAmount);
-            openDateEditTextBox.Text = creditAccount.OpenDate.Substring(0,10);
-            closeDateEditTextBox.Text = creditAccount.CloseDate.Substring(0, 10);
-            interestRatePerMonthTextBox.Text = Convert.ToString(creditAccount.InterestRatePerMonth);
-
-            idAccountEditTextBox.Enabled = false;
-            idClientEditTextBox.Enabled = false;
-        }
-
-        private void submitEditButton_Click(object sender, EventArgs e)
+        private void submitAddButton_Click(object sender, EventArgs e)
         {
             CreditAccount creditAccount = new CreditAccount();
-
-            if (performAllEditValidations(creditAccount))
+            if (performAllAddValidations(creditAccount))
             {
-                _creditAccountRepository.updateDataCreditAccount(creditAccount);
+
+               _creditAccountRepository.AddDataCreditAccount(creditAccount);
                 Close();
             }
-          
-           
-
+            
         }
-        public bool performAllEditValidations(CreditAccount creditAccount)
-        {
-            creditAccount.IdAccount = Convert.ToInt32(idAccountEditTextBox.Text);
-            creditAccount.IdClient = Convert.ToInt32(idClientEditTextBox.Text);
 
-            if (!double.TryParse(soldEditTextBox.Text, out double sold) || !double.TryParse(loanAmountEditTextBox.Text, out double loanAmount))
+        public bool performAllAddValidations(CreditAccount creditAccount)
+        {
+            creditAccount.IdAccount = Convert.ToInt32(idAccountAddTextBox.Text);
+            creditAccount.IdClient = Convert.ToInt32(idClientAddTextBox.Text);
+
+            if (!double.TryParse(soldAddTextBox.Text, out double sold) || !double.TryParse(loanAmountAddTextBox.Text, out double loanAmount))
             {
                 MessageBox.Show("Sold and Loan Amount must be numbers!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -68,31 +51,35 @@ namespace _2_1058_MAGUREANU_STEFAN
             creditAccount.Sold = sold;
             creditAccount.LoanAmount = loanAmount;
 
-            if (!dateValidations(openDateEditTextBox.Text, closeDateEditTextBox.Text))
+            if (!dateValidations(openDateAddTextBox.Text, closeDateAddTextBox.Text))
             {
                 return false;
             }
             else
             {
-                creditAccount.OpenDate = openDateEditTextBox.Text;
-                creditAccount.CloseDate = closeDateEditTextBox.Text;
+                creditAccount.OpenDate = openDateAddTextBox.Text;
+                creditAccount.CloseDate = closeDateAddTextBox.Text;
             }
 
-            if(!double.TryParse(interestRatePerMonthTextBox.Text, out double interestRate)){
+            if (!double.TryParse(interestRateMonthTextBox.Text, out double interestRate))
+            {
                 MessageBox.Show("Invalid format for Interest rate/month", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            if(interestRate < 0 || interestRate > 1) {
+            if (interestRate < 0 || interestRate > 1)
+            {
                 MessageBox.Show("Interest rate/month must be greater than 0 and less then 1", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
-            } else {
+            }
+            else
+            {
                 creditAccount.InterestRatePerMonth = interestRate;
             }
 
             return true;
 
         }
-        public bool dateValidations(string openDate,  string closeDate)
+        public bool dateValidations(string openDate, string closeDate)
         { //  format: DD/MM/YYYY (missing DD <= 31, MM <= 12 validations!)
             string[] openDateTemp = openDate.Trim().Split('/');
             string[] closeDateTemp = closeDate.Trim().Split('/');
@@ -101,17 +88,22 @@ namespace _2_1058_MAGUREANU_STEFAN
                 openDateTemp[0].Length != 2 || closeDateTemp[0].Length != 2 ||
                 openDateTemp[1].Length != 2 || closeDateTemp[1].Length != 2 ||
                 openDateTemp[2].Length != 4 || closeDateTemp[2].Length != 4
-                ) {
+                )
+            {
                 MessageBox.Show("The format for Open date and Close date is DD/MM/YYYY!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
-            } else if ( (openDateTemp[0][0] == '0' && !int.TryParse(openDateTemp[0][1].ToString(),out int value1)) ||
+            }
+            else if ((openDateTemp[0][0] == '0' && !int.TryParse(openDateTemp[0][1].ToString(), out int value1)) ||
                        (closeDateTemp[0][0] == '0' && !int.TryParse(closeDateTemp[0][1].ToString(), out int value2))
-                     ){
+                     )
+            {
                 MessageBox.Show("The format for Open date and Close date is DD/MM/YYYY!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
-            } else if ((openDateTemp[1][0] == '0' && !int.TryParse(openDateTemp[1][1].ToString(), out int value3)) ||
+            }
+            else if ((openDateTemp[1][0] == '0' && !int.TryParse(openDateTemp[1][1].ToString(), out int value3)) ||
                        (closeDateTemp[1][0] == '0' && !int.TryParse(closeDateTemp[1][1].ToString(), out int value4))
-                     ){
+                     )
+            {
                 MessageBox.Show("The format for Open date and Close date is DD/MM/YYYY!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
@@ -119,10 +111,12 @@ namespace _2_1058_MAGUREANU_STEFAN
             if (!int.TryParse(openDateTemp[0], out int value5) || !int.TryParse(closeDateTemp[0], out int value6) ||
                 !int.TryParse(openDateTemp[1], out int value7) || !int.TryParse(closeDateTemp[1], out int value8) ||
                 !int.TryParse(openDateTemp[2], out int value9) || !int.TryParse(closeDateTemp[2], out int value10)
-                ) {
+                )
+            {
                 MessageBox.Show("The format for Open date and Close date is DD/MM/YYYY!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
-            } else if(value9 < 2000 || value10 < 2000)
+            }
+            else if (value9 < 2000 || value10 < 2000)
             {
                 MessageBox.Show("The year cannot be less than 2000!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -130,5 +124,7 @@ namespace _2_1058_MAGUREANU_STEFAN
 
             return true;
         }
+
+
     }
 }
