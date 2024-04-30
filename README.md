@@ -1,5 +1,5 @@
 # windows-forms-bank-application
-A bank aplication using Windows Forms
+A bank aplication using Windows Forms .NET 4.8
 
 ![image](https://github.com/stefanmagu/windows-forms-bank-application/assets/123208247/c3100a25-4ac2-461f-9117-beaef3a3f073)
 
