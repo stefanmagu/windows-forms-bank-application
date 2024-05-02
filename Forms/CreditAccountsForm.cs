@@ -61,7 +61,7 @@ namespace _2_1058_MAGUREANU_STEFAN
 
         private void addCreditAccountButton_Click(object sender, EventArgs e)
         {
-            AddCreditAccountForm addCreditAccountForm = new AddCreditAccountForm();
+            AddCreditAccountForm addCreditAccountForm = new AddCreditAccountForm(_client);
             addCreditAccountForm.ShowDialog();
             creditAccountsDataGridView.DataSource = _creditAccountRepository.FetchDataCreditAccounts(_client);
         }

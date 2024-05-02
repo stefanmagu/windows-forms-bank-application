@@ -15,10 +15,16 @@ namespace _2_1058_MAGUREANU_STEFAN.Forms
     public partial class AddCreditAccountForm : Form
     {
         private CreditAccountRepository _creditAccountRepository;
-        public AddCreditAccountForm()
+        private Client _client;
+        public AddCreditAccountForm(Client client)
         {
             InitializeComponent();
             _creditAccountRepository = new CreditAccountRepository();
+            _client = client;
+
+            idClientAddTextBox.Text = Convert.ToString(client.Id);
+            idClientAddTextBox.Enabled = false;
+
         }
 
         private void submitAddButton_Click(object sender, EventArgs e)
