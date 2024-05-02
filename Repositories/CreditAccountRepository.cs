@@ -137,5 +137,33 @@ namespace _2_1058_MAGUREANU_STEFAN.Repositories
                 connection.Close();
             }
         }
+
+        public int GetLastIdAccountPlus1()
+        {
+            int lastIndexPlus1 = -1;
+            using(OracleConnection connection = new OracleConnection(DataBaseConstants.ConnectionString))
+            {
+                connection.Open();
+
+                string sql = "SELECT MAX(id_account) FROM credit_accounts";
+                using(OracleCommand oracleCommand = new OracleCommand(sql, connection))
+                {
+
+                    using(OracleDataReader reader = oracleCommand.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            int lastId = Convert.ToInt32(reader[0]);
+                            lastIndexPlus1 = lastId + 1; 
+                        }
+
+                    }
+
+                }
+
+
+            }
+            return lastIndexPlus1;
+        }
     }
 }

@@ -24,6 +24,8 @@ namespace _2_1058_MAGUREANU_STEFAN.Forms
 
             idClientAddTextBox.Text = Convert.ToString(client.Id);
             idClientAddTextBox.Enabled = false;
+            idAccountAddTextBox.Text = Convert.ToString(_creditAccountRepository.GetLastIdAccountPlus1());      
+            idAccountAddTextBox.Enabled = false;
 
         }
 
