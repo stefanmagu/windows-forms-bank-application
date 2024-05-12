@@ -39,13 +39,16 @@
             // 
             this.creditAccountsDataGridView.AllowUserToAddRows = false;
             this.creditAccountsDataGridView.AllowUserToDeleteRows = false;
+            this.creditAccountsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.creditAccountsDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.creditAccountsDataGridView.BackgroundColor = System.Drawing.Color.MintCream;
             this.creditAccountsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.creditAccountsDataGridView.Location = new System.Drawing.Point(12, 60);
+            this.creditAccountsDataGridView.Location = new System.Drawing.Point(12, 79);
             this.creditAccountsDataGridView.Name = "creditAccountsDataGridView";
             this.creditAccountsDataGridView.ReadOnly = true;
             this.creditAccountsDataGridView.RowHeadersWidth = 51;
             this.creditAccountsDataGridView.RowTemplate.Height = 24;
-            this.creditAccountsDataGridView.Size = new System.Drawing.Size(1401, 317);
+            this.creditAccountsDataGridView.Size = new System.Drawing.Size(1372, 317);
             this.creditAccountsDataGridView.TabIndex = 0;
             this.creditAccountsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.creditAccountsDataGridView_CellContentClick);
             // 
@@ -61,29 +64,34 @@
             // 
             // refreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(1114, 7);
+            this.refreshButton.BackColor = System.Drawing.Color.Orange;
+            this.refreshButton.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshButton.Location = new System.Drawing.Point(413, 6);
             this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(107, 47);
+            this.refreshButton.Size = new System.Drawing.Size(145, 68);
             this.refreshButton.TabIndex = 2;
             this.refreshButton.Text = "Refresh Data";
-            this.refreshButton.UseVisualStyleBackColor = true;
+            this.refreshButton.UseVisualStyleBackColor = false;
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
             // addCreditAccountButton
             // 
-            this.addCreditAccountButton.Location = new System.Drawing.Point(1227, 7);
+            this.addCreditAccountButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.addCreditAccountButton.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCreditAccountButton.Location = new System.Drawing.Point(564, 6);
             this.addCreditAccountButton.Name = "addCreditAccountButton";
-            this.addCreditAccountButton.Size = new System.Drawing.Size(149, 47);
+            this.addCreditAccountButton.Size = new System.Drawing.Size(153, 68);
             this.addCreditAccountButton.TabIndex = 3;
             this.addCreditAccountButton.Text = "Add credit account";
-            this.addCreditAccountButton.UseVisualStyleBackColor = true;
+            this.addCreditAccountButton.UseVisualStyleBackColor = false;
             this.addCreditAccountButton.Click += new System.EventHandler(this.addCreditAccountButton_Click);
             // 
             // CreditAccountsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1529, 398);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1394, 403);
             this.Controls.Add(this.addCreditAccountButton);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.infoCreditAcountLabel);

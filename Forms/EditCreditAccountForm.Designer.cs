@@ -50,147 +50,166 @@
             // idAccountEditLabel
             // 
             this.idAccountEditLabel.AutoSize = true;
-            this.idAccountEditLabel.Location = new System.Drawing.Point(54, 33);
+            this.idAccountEditLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idAccountEditLabel.Location = new System.Drawing.Point(22, 34);
             this.idAccountEditLabel.Name = "idAccountEditLabel";
-            this.idAccountEditLabel.Size = new System.Drawing.Size(68, 16);
+            this.idAccountEditLabel.Size = new System.Drawing.Size(79, 19);
             this.idAccountEditLabel.TabIndex = 0;
             this.idAccountEditLabel.Text = "Id account";
             // 
             // idClientLabel
             // 
             this.idClientLabel.AutoSize = true;
-            this.idClientLabel.Location = new System.Drawing.Point(54, 63);
+            this.idClientLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idClientLabel.Location = new System.Drawing.Point(22, 62);
             this.idClientLabel.Name = "idClientLabel";
-            this.idClientLabel.Size = new System.Drawing.Size(52, 16);
+            this.idClientLabel.Size = new System.Drawing.Size(65, 19);
             this.idClientLabel.TabIndex = 1;
             this.idClientLabel.Text = "Id client";
             // 
             // idAccountEditTextBox
             // 
-            this.idAccountEditTextBox.Location = new System.Drawing.Point(153, 30);
+            this.idAccountEditTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.idAccountEditTextBox.Location = new System.Drawing.Point(179, 31);
             this.idAccountEditTextBox.Name = "idAccountEditTextBox";
-            this.idAccountEditTextBox.Size = new System.Drawing.Size(216, 22);
+            this.idAccountEditTextBox.Size = new System.Drawing.Size(196, 22);
             this.idAccountEditTextBox.TabIndex = 2;
             // 
             // idClientEditTextBox
             // 
-            this.idClientEditTextBox.Location = new System.Drawing.Point(153, 60);
+            this.idClientEditTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.idClientEditTextBox.Location = new System.Drawing.Point(179, 59);
             this.idClientEditTextBox.Name = "idClientEditTextBox";
-            this.idClientEditTextBox.Size = new System.Drawing.Size(216, 22);
+            this.idClientEditTextBox.Size = new System.Drawing.Size(196, 22);
             this.idClientEditTextBox.TabIndex = 3;
             // 
             // soldEditLabel
             // 
             this.soldEditLabel.AutoSize = true;
-            this.soldEditLabel.Location = new System.Drawing.Point(54, 88);
+            this.soldEditLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soldEditLabel.Location = new System.Drawing.Point(22, 90);
             this.soldEditLabel.Name = "soldEditLabel";
-            this.soldEditLabel.Size = new System.Drawing.Size(35, 16);
+            this.soldEditLabel.Size = new System.Drawing.Size(40, 19);
             this.soldEditLabel.TabIndex = 4;
             this.soldEditLabel.Text = "Sold";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 119);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(22, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 16);
+            this.label2.Size = new System.Drawing.Size(97, 19);
             this.label2.TabIndex = 5;
             this.label2.Text = "Loan amount";
             // 
             // openDateEditLabel
             // 
             this.openDateEditLabel.AutoSize = true;
-            this.openDateEditLabel.Location = new System.Drawing.Point(41, 150);
+            this.openDateEditLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openDateEditLabel.Location = new System.Drawing.Point(22, 146);
             this.openDateEditLabel.Name = "openDateEditLabel";
-            this.openDateEditLabel.Size = new System.Drawing.Size(70, 16);
+            this.openDateEditLabel.Size = new System.Drawing.Size(77, 19);
             this.openDateEditLabel.TabIndex = 6;
             this.openDateEditLabel.Text = "Open date";
             // 
             // closeDateEditLabel
             // 
             this.closeDateEditLabel.AutoSize = true;
-            this.closeDateEditLabel.Location = new System.Drawing.Point(42, 178);
+            this.closeDateEditLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeDateEditLabel.Location = new System.Drawing.Point(22, 174);
             this.closeDateEditLabel.Name = "closeDateEditLabel";
-            this.closeDateEditLabel.Size = new System.Drawing.Size(72, 16);
+            this.closeDateEditLabel.Size = new System.Drawing.Size(81, 19);
             this.closeDateEditLabel.TabIndex = 7;
             this.closeDateEditLabel.Text = "Close date";
             // 
             // interestRatePerMonthEditLabel
             // 
             this.interestRatePerMonthEditLabel.AutoSize = true;
-            this.interestRatePerMonthEditLabel.Location = new System.Drawing.Point(31, 212);
+            this.interestRatePerMonthEditLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.interestRatePerMonthEditLabel.Location = new System.Drawing.Point(22, 200);
             this.interestRatePerMonthEditLabel.Name = "interestRatePerMonthEditLabel";
-            this.interestRatePerMonthEditLabel.Size = new System.Drawing.Size(116, 16);
+            this.interestRatePerMonthEditLabel.Size = new System.Drawing.Size(139, 19);
             this.interestRatePerMonthEditLabel.TabIndex = 8;
             this.interestRatePerMonthEditLabel.Text = "Interest rate/month";
             // 
             // soldEditTextBox
             // 
-            this.soldEditTextBox.Location = new System.Drawing.Point(153, 88);
+            this.soldEditTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.soldEditTextBox.Location = new System.Drawing.Point(179, 87);
             this.soldEditTextBox.Name = "soldEditTextBox";
-            this.soldEditTextBox.Size = new System.Drawing.Size(216, 22);
+            this.soldEditTextBox.Size = new System.Drawing.Size(196, 22);
             this.soldEditTextBox.TabIndex = 9;
             // 
             // loanAmountEditTextBox
             // 
-            this.loanAmountEditTextBox.Location = new System.Drawing.Point(153, 116);
+            this.loanAmountEditTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.loanAmountEditTextBox.Location = new System.Drawing.Point(179, 115);
             this.loanAmountEditTextBox.Name = "loanAmountEditTextBox";
-            this.loanAmountEditTextBox.Size = new System.Drawing.Size(216, 22);
+            this.loanAmountEditTextBox.Size = new System.Drawing.Size(196, 22);
             this.loanAmountEditTextBox.TabIndex = 10;
             // 
             // openDateEditTextBox
             // 
-            this.openDateEditTextBox.Location = new System.Drawing.Point(153, 147);
+            this.openDateEditTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.openDateEditTextBox.Location = new System.Drawing.Point(179, 143);
             this.openDateEditTextBox.Name = "openDateEditTextBox";
-            this.openDateEditTextBox.Size = new System.Drawing.Size(216, 22);
+            this.openDateEditTextBox.Size = new System.Drawing.Size(196, 22);
             this.openDateEditTextBox.TabIndex = 11;
             // 
             // closeDateEditTextBox
             // 
-            this.closeDateEditTextBox.Location = new System.Drawing.Point(153, 175);
+            this.closeDateEditTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.closeDateEditTextBox.Location = new System.Drawing.Point(179, 171);
             this.closeDateEditTextBox.Name = "closeDateEditTextBox";
-            this.closeDateEditTextBox.Size = new System.Drawing.Size(216, 22);
+            this.closeDateEditTextBox.Size = new System.Drawing.Size(196, 22);
             this.closeDateEditTextBox.TabIndex = 12;
             // 
             // interestRatePerMonthTextBox
             // 
-            this.interestRatePerMonthTextBox.Location = new System.Drawing.Point(153, 206);
+            this.interestRatePerMonthTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.interestRatePerMonthTextBox.Location = new System.Drawing.Point(179, 199);
             this.interestRatePerMonthTextBox.Name = "interestRatePerMonthTextBox";
-            this.interestRatePerMonthTextBox.Size = new System.Drawing.Size(216, 22);
+            this.interestRatePerMonthTextBox.Size = new System.Drawing.Size(196, 22);
             this.interestRatePerMonthTextBox.TabIndex = 13;
             // 
             // openDateFormatLabel
             // 
             this.openDateFormatLabel.AutoSize = true;
-            this.openDateFormatLabel.Location = new System.Drawing.Point(375, 147);
+            this.openDateFormatLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openDateFormatLabel.Location = new System.Drawing.Point(381, 146);
             this.openDateFormatLabel.Name = "openDateFormatLabel";
-            this.openDateFormatLabel.Size = new System.Drawing.Size(93, 16);
+            this.openDateFormatLabel.Size = new System.Drawing.Size(107, 19);
             this.openDateFormatLabel.TabIndex = 14;
             this.openDateFormatLabel.Text = "DD/MM/YYYY";
             // 
             // closeDateFormatLabel
             // 
             this.closeDateFormatLabel.AutoSize = true;
-            this.closeDateFormatLabel.Location = new System.Drawing.Point(375, 178);
+            this.closeDateFormatLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeDateFormatLabel.Location = new System.Drawing.Point(381, 174);
             this.closeDateFormatLabel.Name = "closeDateFormatLabel";
-            this.closeDateFormatLabel.Size = new System.Drawing.Size(93, 16);
+            this.closeDateFormatLabel.Size = new System.Drawing.Size(107, 19);
             this.closeDateFormatLabel.TabIndex = 15;
             this.closeDateFormatLabel.Text = "DD/MM/YYYY";
             // 
             // submitEditButton
             // 
-            this.submitEditButton.Location = new System.Drawing.Point(360, 250);
+            this.submitEditButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.submitEditButton.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitEditButton.Location = new System.Drawing.Point(385, 236);
             this.submitEditButton.Name = "submitEditButton";
             this.submitEditButton.Size = new System.Drawing.Size(93, 55);
             this.submitEditButton.TabIndex = 16;
             this.submitEditButton.Text = "Submit";
-            this.submitEditButton.UseVisualStyleBackColor = true;
+            this.submitEditButton.UseVisualStyleBackColor = false;
             this.submitEditButton.Click += new System.EventHandler(this.submitEditButton_Click);
             // 
-            // EditForm
+            // EditCreditAccountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(589, 358);
             this.Controls.Add(this.submitEditButton);
             this.Controls.Add(this.closeDateFormatLabel);
@@ -209,7 +228,7 @@
             this.Controls.Add(this.idAccountEditTextBox);
             this.Controls.Add(this.idClientLabel);
             this.Controls.Add(this.idAccountEditLabel);
-            this.Name = "EditForm";
+            this.Name = "EditCreditAccountForm";
             this.Text = "EditForm";
             this.ResumeLayout(false);
             this.PerformLayout();

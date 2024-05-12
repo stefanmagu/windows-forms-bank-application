@@ -95,22 +95,19 @@ namespace _2_1058_MAGUREANU_STEFAN.Forms
             if (openDateTemp.Length != 3 || closeDateTemp.Length != 3 ||
                 openDateTemp[0].Length != 2 || closeDateTemp[0].Length != 2 ||
                 openDateTemp[1].Length != 2 || closeDateTemp[1].Length != 2 ||
-                openDateTemp[2].Length != 4 || closeDateTemp[2].Length != 4
-                )
+                openDateTemp[2].Length != 4 || closeDateTemp[2].Length != 4)
             {
                 MessageBox.Show("The format for Open date and Close date is DD/MM/YYYY!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             else if ((openDateTemp[0][0] == '0' && !int.TryParse(openDateTemp[0][1].ToString(), out int value1)) ||
-                       (closeDateTemp[0][0] == '0' && !int.TryParse(closeDateTemp[0][1].ToString(), out int value2))
-                     )
+                       (closeDateTemp[0][0] == '0' && !int.TryParse(closeDateTemp[0][1].ToString(), out int value2)))
             {
                 MessageBox.Show("The format for Open date and Close date is DD/MM/YYYY!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             else if ((openDateTemp[1][0] == '0' && !int.TryParse(openDateTemp[1][1].ToString(), out int value3)) ||
-                       (closeDateTemp[1][0] == '0' && !int.TryParse(closeDateTemp[1][1].ToString(), out int value4))
-                     )
+                       (closeDateTemp[1][0] == '0' && !int.TryParse(closeDateTemp[1][1].ToString(), out int value4)))
             {
                 MessageBox.Show("The format for Open date and Close date is DD/MM/YYYY!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;

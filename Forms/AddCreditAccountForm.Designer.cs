@@ -50,111 +50,125 @@
             // idAccountAddLabel
             // 
             this.idAccountAddLabel.AutoSize = true;
-            this.idAccountAddLabel.Location = new System.Drawing.Point(63, 29);
+            this.idAccountAddLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idAccountAddLabel.Location = new System.Drawing.Point(17, 26);
             this.idAccountAddLabel.Name = "idAccountAddLabel";
-            this.idAccountAddLabel.Size = new System.Drawing.Size(85, 20);
+            this.idAccountAddLabel.Size = new System.Drawing.Size(79, 19);
             this.idAccountAddLabel.TabIndex = 0;
             this.idAccountAddLabel.Text = "Id account";
             // 
             // idClientAddLabel
             // 
             this.idClientAddLabel.AutoSize = true;
-            this.idClientAddLabel.Location = new System.Drawing.Point(73, 55);
+            this.idClientAddLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idClientAddLabel.Location = new System.Drawing.Point(17, 54);
             this.idClientAddLabel.Name = "idClientAddLabel";
-            this.idClientAddLabel.Size = new System.Drawing.Size(52, 16);
+            this.idClientAddLabel.Size = new System.Drawing.Size(65, 19);
             this.idClientAddLabel.TabIndex = 1;
             this.idClientAddLabel.Text = "Id client";
             // 
             // soldAddLabel
             // 
             this.soldAddLabel.AutoSize = true;
-            this.soldAddLabel.Location = new System.Drawing.Point(90, 80);
+            this.soldAddLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soldAddLabel.Location = new System.Drawing.Point(17, 82);
             this.soldAddLabel.Name = "soldAddLabel";
-            this.soldAddLabel.Size = new System.Drawing.Size(35, 16);
+            this.soldAddLabel.Size = new System.Drawing.Size(40, 19);
             this.soldAddLabel.TabIndex = 2;
             this.soldAddLabel.Text = "Sold";
             // 
             // loanAmountAddLabel
             // 
             this.loanAmountAddLabel.AutoSize = true;
-            this.loanAmountAddLabel.Location = new System.Drawing.Point(50, 107);
+            this.loanAmountAddLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loanAmountAddLabel.Location = new System.Drawing.Point(17, 110);
             this.loanAmountAddLabel.Name = "loanAmountAddLabel";
-            this.loanAmountAddLabel.Size = new System.Drawing.Size(84, 16);
+            this.loanAmountAddLabel.Size = new System.Drawing.Size(97, 19);
             this.loanAmountAddLabel.TabIndex = 3;
             this.loanAmountAddLabel.Text = "Loan amount";
             // 
             // openDateAddLabel
             // 
             this.openDateAddLabel.AutoSize = true;
-            this.openDateAddLabel.Location = new System.Drawing.Point(64, 138);
+            this.openDateAddLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openDateAddLabel.Location = new System.Drawing.Point(17, 138);
             this.openDateAddLabel.Name = "openDateAddLabel";
-            this.openDateAddLabel.Size = new System.Drawing.Size(70, 16);
+            this.openDateAddLabel.Size = new System.Drawing.Size(77, 19);
             this.openDateAddLabel.TabIndex = 4;
             this.openDateAddLabel.Text = "Open date";
             // 
             // closeDateAddLabel
             // 
             this.closeDateAddLabel.AutoSize = true;
-            this.closeDateAddLabel.Location = new System.Drawing.Point(62, 169);
+            this.closeDateAddLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeDateAddLabel.Location = new System.Drawing.Point(17, 166);
             this.closeDateAddLabel.Name = "closeDateAddLabel";
-            this.closeDateAddLabel.Size = new System.Drawing.Size(72, 16);
+            this.closeDateAddLabel.Size = new System.Drawing.Size(81, 19);
             this.closeDateAddLabel.TabIndex = 5;
             this.closeDateAddLabel.Text = "Close date";
             // 
             // interestRateMonthAddLabel
             // 
             this.interestRateMonthAddLabel.AutoSize = true;
-            this.interestRateMonthAddLabel.Location = new System.Drawing.Point(12, 202);
+            this.interestRateMonthAddLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.interestRateMonthAddLabel.Location = new System.Drawing.Point(17, 194);
             this.interestRateMonthAddLabel.Name = "interestRateMonthAddLabel";
-            this.interestRateMonthAddLabel.Size = new System.Drawing.Size(116, 16);
+            this.interestRateMonthAddLabel.Size = new System.Drawing.Size(139, 19);
             this.interestRateMonthAddLabel.TabIndex = 6;
             this.interestRateMonthAddLabel.Text = "Interest rate/month";
             // 
             // idAccountAddTextBox
             // 
-            this.idAccountAddTextBox.Location = new System.Drawing.Point(140, 24);
+            this.idAccountAddTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.idAccountAddTextBox.Location = new System.Drawing.Point(171, 26);
             this.idAccountAddTextBox.Name = "idAccountAddTextBox";
             this.idAccountAddTextBox.Size = new System.Drawing.Size(167, 22);
             this.idAccountAddTextBox.TabIndex = 7;
             // 
             // idClientAddTextBox
             // 
-            this.idClientAddTextBox.Location = new System.Drawing.Point(140, 52);
+            this.idClientAddTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.idClientAddTextBox.Location = new System.Drawing.Point(171, 54);
             this.idClientAddTextBox.Name = "idClientAddTextBox";
             this.idClientAddTextBox.Size = new System.Drawing.Size(167, 22);
             this.idClientAddTextBox.TabIndex = 8;
             // 
             // soldAddTextBox
             // 
-            this.soldAddTextBox.Location = new System.Drawing.Point(140, 80);
+            this.soldAddTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.soldAddTextBox.Location = new System.Drawing.Point(171, 82);
             this.soldAddTextBox.Name = "soldAddTextBox";
             this.soldAddTextBox.Size = new System.Drawing.Size(167, 22);
             this.soldAddTextBox.TabIndex = 9;
             // 
             // loanAmountAddTextBox
             // 
-            this.loanAmountAddTextBox.Location = new System.Drawing.Point(140, 107);
+            this.loanAmountAddTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.loanAmountAddTextBox.Location = new System.Drawing.Point(171, 110);
             this.loanAmountAddTextBox.Name = "loanAmountAddTextBox";
             this.loanAmountAddTextBox.Size = new System.Drawing.Size(167, 22);
             this.loanAmountAddTextBox.TabIndex = 10;
             // 
             // openDateAddTextBox
             // 
-            this.openDateAddTextBox.Location = new System.Drawing.Point(140, 135);
+            this.openDateAddTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.openDateAddTextBox.Location = new System.Drawing.Point(171, 138);
             this.openDateAddTextBox.Name = "openDateAddTextBox";
             this.openDateAddTextBox.Size = new System.Drawing.Size(167, 22);
             this.openDateAddTextBox.TabIndex = 11;
             // 
             // closeDateAddTextBox
             // 
-            this.closeDateAddTextBox.Location = new System.Drawing.Point(140, 166);
+            this.closeDateAddTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.closeDateAddTextBox.Location = new System.Drawing.Point(171, 166);
             this.closeDateAddTextBox.Name = "closeDateAddTextBox";
             this.closeDateAddTextBox.Size = new System.Drawing.Size(167, 22);
             this.closeDateAddTextBox.TabIndex = 12;
             // 
             // interestRateMonthTextBox
             // 
-            this.interestRateMonthTextBox.Location = new System.Drawing.Point(140, 202);
+            this.interestRateMonthTextBox.BackColor = System.Drawing.Color.MintCream;
+            this.interestRateMonthTextBox.Location = new System.Drawing.Point(171, 194);
             this.interestRateMonthTextBox.Name = "interestRateMonthTextBox";
             this.interestRateMonthTextBox.Size = new System.Drawing.Size(167, 22);
             this.interestRateMonthTextBox.TabIndex = 13;
@@ -162,36 +176,41 @@
             // formatDateAddLabel
             // 
             this.formatDateAddLabel.AutoSize = true;
-            this.formatDateAddLabel.Location = new System.Drawing.Point(313, 141);
+            this.formatDateAddLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formatDateAddLabel.Location = new System.Drawing.Point(344, 141);
             this.formatDateAddLabel.Name = "formatDateAddLabel";
-            this.formatDateAddLabel.Size = new System.Drawing.Size(93, 16);
+            this.formatDateAddLabel.Size = new System.Drawing.Size(107, 19);
             this.formatDateAddLabel.TabIndex = 14;
             this.formatDateAddLabel.Text = "DD/MM/YYYY";
             // 
             // formatDateAddLabel2
             // 
             this.formatDateAddLabel2.AutoSize = true;
-            this.formatDateAddLabel2.Location = new System.Drawing.Point(313, 169);
+            this.formatDateAddLabel2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formatDateAddLabel2.Location = new System.Drawing.Point(344, 165);
             this.formatDateAddLabel2.Name = "formatDateAddLabel2";
-            this.formatDateAddLabel2.Size = new System.Drawing.Size(93, 16);
+            this.formatDateAddLabel2.Size = new System.Drawing.Size(107, 19);
             this.formatDateAddLabel2.TabIndex = 15;
             this.formatDateAddLabel2.Text = "DD/MM/YYYY";
             // 
             // submitAddButton
             // 
-            this.submitAddButton.Location = new System.Drawing.Point(295, 246);
+            this.submitAddButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.submitAddButton.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitAddButton.Location = new System.Drawing.Point(348, 234);
             this.submitAddButton.Name = "submitAddButton";
-            this.submitAddButton.Size = new System.Drawing.Size(92, 52);
+            this.submitAddButton.Size = new System.Drawing.Size(97, 57);
             this.submitAddButton.TabIndex = 16;
             this.submitAddButton.Text = "Submit";
-            this.submitAddButton.UseVisualStyleBackColor = true;
+            this.submitAddButton.UseVisualStyleBackColor = false;
             this.submitAddButton.Click += new System.EventHandler(this.submitAddButton_Click);
             // 
             // AddCreditAccountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 368);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(575, 345);
             this.Controls.Add(this.submitAddButton);
             this.Controls.Add(this.formatDateAddLabel2);
             this.Controls.Add(this.formatDateAddLabel);
