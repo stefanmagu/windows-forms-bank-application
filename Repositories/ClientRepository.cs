@@ -20,29 +20,37 @@ namespace _2_1058_MAGUREANU_STEFAN.Repositories
 
             using(OracleConnection connection = new OracleConnection(DataBaseConstants.ConnectionString))
             {
-                connection.Open();
-
-                string sql = "SELECT * FROM clients ORDER BY id_client";
-                using(OracleCommand command = new OracleCommand(sql,connection)) 
-                {
-                    using (OracleDataReader reader = command.ExecuteReader())
+                try { 
+                    connection.Open();
+                    string sql = "SELECT * FROM clients ORDER BY id_client";
+                    using (OracleCommand command = new OracleCommand(sql, connection))
                     {
-
-                        while (reader.Read())
+                        using (OracleDataReader reader = command.ExecuteReader())
                         {
-                            Client client = new Client();
-                            client.Id = Convert.ToInt32(reader["id_client"]);
-                            client.FirstName = reader["first_name"].ToString();
-                            client.LastName = reader["last_name"].ToString();
-                            client.Email = reader["email"].ToString();
-                            client.PhoneNumber = reader["phone_number"].ToString();
 
-                            data.Add(client);
+                            while (reader.Read())
+                            {
+                                Client client = new Client();
+                                client.Id = Convert.ToInt32(reader["id_client"]);
+                                client.FirstName = reader["first_name"].ToString();
+                                client.LastName = reader["last_name"].ToString();
+                                client.Email = reader["email"].ToString();
+                                client.PhoneNumber = reader["phone_number"].ToString();
+
+                                data.Add(client);
+                            }
                         }
+
                     }
-                   
+                    connection.Close();
+                } catch (Exception ex)
+                {
+                    Console.WriteLine("Something went wrong");
+                    Console.WriteLine(ex.Message);
                 }
-                connection.Close();
+
+
+                
             }
              
             return data;

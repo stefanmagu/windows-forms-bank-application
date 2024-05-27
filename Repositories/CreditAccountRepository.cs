@@ -51,8 +51,8 @@ namespace _2_1058_MAGUREANU_STEFAN.Repositories
         public void UpdateDataCreditAccount(CreditAccount creditAccount)
         {
 
-            creditAccount.OpenDate.Replace('/', '-');
-            creditAccount.CloseDate.Replace("/", "-");
+            creditAccount.OpenDate = creditAccount.OpenDate.Replace('/', '-');
+            creditAccount.CloseDate = creditAccount.CloseDate.Replace("/", "-");
 
             using (OracleConnection connection = new OracleConnection(DataBaseConstants.ConnectionString))
             {
@@ -110,8 +110,8 @@ namespace _2_1058_MAGUREANU_STEFAN.Repositories
 
         public void AddDataCreditAccount(CreditAccount creditAccount)
         {
-            creditAccount.OpenDate.Replace('/', '-');
-            creditAccount.CloseDate.Replace("/", "-");
+            creditAccount.OpenDate = creditAccount.OpenDate.Replace('/', '-');
+            creditAccount.CloseDate = creditAccount.CloseDate.Replace("/", "-");
 
             using (OracleConnection connection = new OracleConnection(DataBaseConstants.ConnectionString))
             {
