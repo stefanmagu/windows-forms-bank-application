@@ -4,15 +4,22 @@ A bank aplication using Windows Forms .NET 4.8
 ![Screenshot 2024-06-18 204945](https://github.com/stefanmagu/windows-forms-bank-application/assets/123208247/c35270e0-1dd4-4589-9fec-482e61d8d37d)
 
 ![Screenshot 2024-06-18 205032](https://github.com/stefanmagu/windows-forms-bank-application/assets/123208247/280028bf-462c-42f5-9d20-dfdc4c3aea83)
+
 ![Screenshot 2024-06-18 205114](https://github.com/stefanmagu/windows-forms-bank-application/assets/123208247/52bfe586-4429-46b3-bd0f-501226c8a855)
+
 ![Screenshot 2024-06-18 205138](https://github.com/stefanmagu/windows-forms-bank-application/assets/123208247/a8fec941-0d43-48b3-9e9a-1c55bc0c1579)
+
 ![Screenshot 2024-06-18 205245](https://github.com/stefanmagu/windows-forms-bank-application/assets/123208247/ca80f3bd-a001-453d-8f45-1b6c59a27040)
+
 ![Screenshot 2024-06-18 205306](https://github.com/stefanmagu/windows-forms-bank-application/assets/123208247/3c9908eb-79aa-4aee-8319-cac93fc15d44)
 
+
 Steps to configure and run the application:
+
 Step 1:
 The database schema looks like this:
 ![image](https://github.com/stefanmagu/windows-forms-bank-application/assets/123208247/c3100a25-4ac2-461f-9117-beaef3a3f073)
+
 First, you have to configure an Oracle DB server(the application uses Oracle.ManagedDataAcces NuGet package), so it's not a local DB like SQLite (maybe i'll update the application in the future to change the Oracle DB to SQLite, but you can do it on your own as needed). Use the following script to create and populate the tables:
 
 CREATE TABLE CLIENTS (
@@ -138,4 +145,4 @@ Open .sln and run the application.
 NOTES:
 If you're using different day-time format than the following on your machine, the date validation's for the edit and add form won't work:
 ![image](https://github.com/stefanmagu/windows-forms-bank-application/assets/123208247/67d2a602-271a-4e5e-8804-35f5f46e6229)
-Solution: You have to either change your date-time format to match the one above, or change the forms and use DateTimePicker from ToolBox.
+Recommended solution: You have to either change your date-time format to match the one above, or change the date validations to accept universal date-time input(or change the forms and use DateTimePicker from ToolBox.
